@@ -1,0 +1,82 @@
+/* Reseteo básico para que se vea igual en todos los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* El contenedor principal de la tarjeta */
+.tarjeta {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 400px; /* Evita que se estire demasiado en monitores de PC */
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Estilo para tu foto de perfil */
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* La hace un círculo perfecto */
+    object-fit: cover;
+    border: 3px solid #0056b3;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #666666;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+/* Estilos para los botones de contacto */
+.contenedor-enlaces {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre cada botón */
+}
+
+.boton {
+    display: block;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto cuando alguien pasa el dedo o el mouse sobre el botón */
+.boton:hover {
+    background-color: #003d82;
+}
+
+/* Un color diferente para el botón principal de WhatsApp o Correo */
+.boton.destacado {
+    background-color: #25d366; /* Verde tipo WhatsApp */
+    color: white;
+}
+.boton.destacado:hover {
+    background-color: #128c7e;
+}
